@@ -1,2 +1,9 @@
 - Briefly explain the vulnerability and why the secure version is better at preventing repudiation than the insecure version.
 - What additional security mechanisms can you incorporate to prevent such attacks?
+
+The vulnerability here is that there is nothing tracking the messages that one 
+can send. In the secure version, by having this log tracking the messages, it can 
+limit ones messages where bots and attacks can be lowered/stopped. 
+
+You can also apply a rate limit where users are only able to send requests every
+interval of time. 

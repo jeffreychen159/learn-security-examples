@@ -1,2 +1,10 @@
 - Briefly explain the vulnerability and why the secure version prevents the vulnerability.
 - What additional security mechanisms can you incorporate to prevent such attacks?
+
+The vulnerability here that the server will crash if the wrong input is passed. To fix this, 
+we added a try catch where a bad input will not cause the server to crash. 
+
+Additional securities we can add is to limit the amount of requests that can come into the
+system. This will stop the system from being overwhelmed by requests. You can also add a 
+capcha request where it can eliminate the bots that try to overwhelm the server with the
+requests. 

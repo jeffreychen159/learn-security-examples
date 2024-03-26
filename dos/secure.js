@@ -22,6 +22,7 @@ const User = mongoose.model('User', userSchema);
 app.get('/userinfo', async (req, res) => {
   const { id } = req.query;
 
+  // try catch here is to not crash the server
   try {
     const user = await User.findOne({ _id: id }).exec();
     if (user) {
